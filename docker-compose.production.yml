@@ -13,7 +13,7 @@ services:
       - pg_data:/var/lib/postgresql/data
 
   backend:
-    build: toomike/kittygram_backend
+    image: toomike/kittygram_backend
     env_file: .env
     depends_on:
       - db
@@ -23,13 +23,13 @@ services:
 
   frontend:
     env_file: .env
-    build: toomike/kittygram_frontend
+    image: toomike/kittygram_frontend
     command: cp -r /app/build/. /static/
     volumes:
       - static:/static
 
   gateway:
-    build: toomike/kittygram_gateway
+    image: toomike/kittygram_gateway
     env_file: .env
     ports:
       - 9000:80
