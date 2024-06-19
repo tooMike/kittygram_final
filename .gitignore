@@ -150,3 +150,6 @@ media/
 
 # Others
 node_modules
+pytest.ini
+tests
+tests.yml
