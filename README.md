@@ -6,6 +6,8 @@
 
 Документация к API достпуна по адресу: https://7juxi.com/redoc/ или https://7juxi.com/swagger/
 
+В проекте настроен CI/CD с использованием GitHub Actions. Запуск происходит при push в ветку releases
+
 # Авторы проекта
 
 [Mikhail](https://github.com/tooMike)
