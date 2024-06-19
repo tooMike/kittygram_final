@@ -153,3 +153,4 @@ node_modules
 pytest.ini
 tests
 tests.yml
+.env.example
